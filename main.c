@@ -4,7 +4,7 @@
 #include <errno.h>
 
 void panic(char* s) {
-	fprintf(stderr, s);
+	fprintf(stderr, "%s", s);
 	fprintf(stderr, "\n");
 	exit(1);
 }
